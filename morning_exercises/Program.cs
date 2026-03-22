@@ -147,26 +147,37 @@
 
 // Console.WriteLine(BinaryNode2.PathSum(root, 0, 26));
 
-using System.IO.Pipelines;
 
-BinaryNode3 root = new(6)
+// BinaryNode3 root = new(6)
+// {
+//     left = new(4),
+//     right = new(7)
+//     {
+//         left = new(10),
+//         right = new(8)
+//         {
+//             right = new(5)
+//         }
+//     }
+// };
+
+// List<List<int>> result = BinaryNode3.PathSum2(root, 10);
+// foreach (List<int> res in result)
+// {
+//     foreach (int c in res)
+//     {
+//         Console.Write(c + " ");
+//     }
+// }
+
+BinaryNode4 root = new(11)
 {
-    left = new(4),
-    right = new(7)
+    left = new(2)
     {
-        left = new(10),
-        right = new(8)
-        {
-            right = new(5)
-        }
-    }
+        left = new(6),
+        right = new(5)
+    },
+    right = new(8)
 };
 
-List<List<int>> result = BinaryNode3.PathSum2(root, 10);
-foreach (List<int> res in result)
-{
-    foreach (int c in res)
-    {
-        Console.Write(c + " ");
-    }
-}
+Console.WriteLine(BinaryNode4.MaxPathSum(root));
