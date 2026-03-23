@@ -170,7 +170,20 @@
 //     }
 // }
 
-BinaryNode4 root = new(11)
+// BinaryNode4 root = new(11)
+// {
+//     left = new(2)
+//     {
+//         left = new(6),
+//         right = new(5)
+//     },
+//     right = new(8)
+// };
+
+// Console.WriteLine(BinaryNode4.MaxPathSum(root));
+
+
+BinaryNode5 root = new(11)
 {
     left = new(2)
     {
@@ -180,4 +193,18 @@ BinaryNode4 root = new(11)
     right = new(8)
 };
 
-Console.WriteLine(BinaryNode4.MaxPathSum(root));
+Queue<string> result = BinaryNode5.SerialiseQA(root);
+
+LinkedList<string> inp = BinaryNode5.SerialiseLLA(root);
+
+// foreach (string s in result) Console.WriteLine(s);
+// foreach (string s in inp) Console.WriteLine(s);
+
+BinaryNode5? test1 = BinaryNode5.DeserialiseQA(result);
+BinaryNode5? test2 =BinaryNode5.DeserialiseLLA(inp);
+
+Queue<string> testresult = BinaryNode5.SerialiseQA(test1);
+LinkedList<string> testinp = BinaryNode5.SerialiseLLA(test2);
+
+// foreach (string s in testresult) Console.WriteLine(s);
+foreach (string s in testinp) Console.WriteLine(s);

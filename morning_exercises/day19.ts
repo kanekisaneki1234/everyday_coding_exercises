@@ -1,5 +1,3 @@
-import { globalAgent } from "node:http";
-
 class BinaryNode4 {
     constructor(
         public val: number = 0,
