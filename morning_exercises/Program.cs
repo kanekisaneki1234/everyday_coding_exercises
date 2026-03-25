@@ -209,12 +209,20 @@
 // // foreach (string s in testresult) Console.WriteLine(s);
 // foreach (string s in testinp) Console.WriteLine(s);
 
-List<List<char>> grid = [
-    ['A','B','C','E'],
-    ['S','F','C','S'],
-    ['A','D','E','E']
-];
+// List<List<char>> grid = [
+//     ['A','B','C','E'],
+//     ['S','F','C','S'],
+//     ['A','D','E','E']
+// ];
 
-Console.WriteLine(CheckWord.WordSearch(grid, "ABCCED"));
-Console.WriteLine(CheckWord.WordSearch(grid, "SEE"));
-Console.WriteLine(CheckWord.WordSearch(grid, "ABCB"));
+// Console.WriteLine(CheckWord.WordSearch(grid, "ABCCED"));
+// Console.WriteLine(CheckWord.WordSearch(grid, "SEE"));
+// Console.WriteLine(CheckWord.WordSearch(grid, "ABCB"));
+
+List<List<int>> grid =  [
+                            [1,0,1,0],
+                            [1,0,1,0],
+                            [1,1,0,1]
+                        ];
+
+Console.WriteLine(CountingIslands.IslandsCount(grid));
