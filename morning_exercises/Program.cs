@@ -220,9 +220,10 @@
 // Console.WriteLine(CheckWord.WordSearch(grid, "ABCB"));
 
 List<List<int>> grid =  [
-                            [1,0,1,0],
-                            [1,0,1,0],
+                            [1,1,1,0],
+                            [0,0,0,0],
                             [1,1,0,1]
                         ];
 
-Console.WriteLine(CountingIslands.IslandsCount(grid));
+// Console.WriteLine(CountingIslands.IslandsCount(grid));
+Console.WriteLine(IslandMaxArea.MaxAreaIsland(grid));
