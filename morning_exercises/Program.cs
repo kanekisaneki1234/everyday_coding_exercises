@@ -219,11 +219,43 @@
 // Console.WriteLine(CheckWord.WordSearch(grid, "SEE"));
 // Console.WriteLine(CheckWord.WordSearch(grid, "ABCB"));
 
-List<List<int>> grid =  [
-                            [1,1,1,0],
-                            [0,0,0,0],
-                            [1,1,0,1]
-                        ];
+// List<List<int>> grid =  [
+//                             [1,1,1,0],
+//                             [0,0,0,0],
+//                             [1,1,0,1]
+//                         ];
 
-// Console.WriteLine(CountingIslands.IslandsCount(grid));
-Console.WriteLine(IslandMaxArea.MaxAreaIsland(grid));
+// // Console.WriteLine(CountingIslands.IslandsCount(grid));
+// Console.WriteLine(IslandMaxArea.MaxAreaIsland(grid));
+
+// List<List<int>> grid =  [[1, 0, 0], 
+//                          [2, 1, 0],
+//                          [2, 1, 1]];
+
+// Console.WriteLine(RottenOranges.BfsRottenOranges(grid));
+
+// GraphNode node = new(4);
+// GraphNode node2 = new(5);
+// GraphNode node3 = new(7);
+// GraphNode node4 = new(6);
+
+// node.neighbours = [node2, node4];
+// node2.neighbours = [node, node3];
+// node3.neighbours = [node2, node4];
+// node4.neighbours = [node, node3];
+
+// Console.WriteLine(GraphNode.CloneGraph(node)!.neighbours![1].val);
+
+// List<List<int>> graph = Doable.CreateGraph(4, [(0,1), (1,2),(2,3)]);
+
+// Console.WriteLine(Doable.IsDoable(graph));
+
+
+List<List<int>> graph = Doable2.CreateGraph(4, [(0,1), (1,2),(2,3)]);
+
+LinkedList<int> result = Doable2.IsDoable(graph);
+
+foreach (int node in result)
+{
+    Console.WriteLine(node);
+}
