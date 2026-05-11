@@ -432,7 +432,16 @@ using System.Data;
 // List<List<int>> input5 = [[1,10],[2,3],[4,5]];
 // Console.WriteLine(string.Join(", ", MergeIntervals.MinSize(input5, queries5))); // 2,2,10
 
-List<int> nums = [1,2,3,4,5];
-int target = 6;
+// List<int> nums = [1,2,3,4,5];
+// int target = 6;
 
-Console.WriteLine(BinarySearchButDiff.BinarySearch(nums, target));
+// Console.WriteLine(BinarySearchButDiff.BinarySearch(nums, target));
+
+Console.WriteLine(SlidingWindow.LongestSubstring("abcabcbb")); // "abc" - length 3
+Console.WriteLine(SlidingWindow.LongestSubstring("bbbbb"));    // "b" - length 1
+Console.WriteLine(SlidingWindow.LongestSubstring("pwwkew"));   // "wke" - length 3
+Console.WriteLine(SlidingWindow.LongestSubstring(""));         // "" - empty string
+Console.WriteLine(SlidingWindow.LongestSubstring("abcdef"));   // "abcdef" - no duplicates, whole string
+Console.WriteLine(SlidingWindow.LongestSubstring("aab"));      // "ab" - length 2
+Console.WriteLine(SlidingWindow.LongestSubstring("dvdf"));     // "vdf" - length 3
+Console.WriteLine(SlidingWindow.LongestSubstring("a"));        // "a" - single character
